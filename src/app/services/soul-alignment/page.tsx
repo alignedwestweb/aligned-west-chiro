@@ -1,9 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import BookNow from '@/components/Shared/BookNow';
 
 export default function SoulAlignmentPage() {
-  // Turncloud URL
-  const bookingUrl = { href: process.env.NEXT_PUBLIC_BOOK_NOW_LINK || '#' };
 
   return (
     <article className="bg-clinic-off-white min-h-screen py-20 px-4">
@@ -94,19 +93,17 @@ export default function SoulAlignmentPage() {
               </p>
             </div>
 
-            <div className="text-center pt-8">
+            <div className="text-center pt-8 py-8">
               <h3 className="text-2xl font-serif text-clinic-dark mb-4">Reconnect With Yourself</h3>
               <p className="max-w-2xl mx-auto mb-8">
                 A Soul Alignment Session offers space to slow down, listen inward, and reconnect with your body’s wisdom — so you can move forward feeling lighter, clearer, and more aligned.
               </p>
               
-              <Link 
-                href={process.env.NEXT_PUBLIC_BOOK_NOW_LINK || '#'}
-                target="_blank"
-                className="inline-block bg-clinic-navy text-white px-12 py-4 text-sm uppercase tracking-widest font-bold hover:bg-clinic-navy transition-all duration-300 shadow-md"
-              >
-                Book Your Session
-              </Link>
+            <BookNow 
+              className="bg-clinic-yellow text-clinic-dark px-10 py-4 rounded-none uppercase tracking-widest text-sm hover:bg-opacity-90 transition inline-block"
+            >
+              Book Now
+            </BookNow>
             </div>
           </section>
         </div>

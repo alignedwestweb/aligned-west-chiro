@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import BookNow from '@/components/Shared/BookNow';
 
 export default function HomePage() {
   return (
@@ -15,12 +16,11 @@ export default function HomePage() {
             Personalized chiropractic care blending mind, body, and soul for holistic wellness in Orem, Utah.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link 
-              href={process.env.NEXT_PUBLIC_BOOK_NOW_LINK || '#'}
-              className="bg-clinic-yellow text-clinic-dark px-10 py-4 rounded-none uppercase tracking-widest text-sm hover:bg-opacity-90 transition"
+            <BookNow 
+              className="bg-clinic-yellow text-clinic-dark px-10 py-4 rounded-none uppercase tracking-widest text-sm hover:bg-opacity-90 transition inline-block"
             >
               Book Now
-            </Link>
+            </BookNow>
             <Link 
               href="/about" 
               className="border border-white/30 text-white px-10 py-4 rounded-none uppercase tracking-widest text-sm hover:bg-white hover:text-clinic-navy transition"

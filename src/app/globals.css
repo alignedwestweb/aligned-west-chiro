@@ -68,3 +68,21 @@ p, span, a, li, div {
   border-radius: 0.25rem; /* e.g. rounded-lg */
   overflow: hidden;
 }
+.booking-btn {
+  position: relative;
+}
+
+.booking-btn:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  z-index: 10;
+}
