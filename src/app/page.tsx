@@ -55,7 +55,7 @@ export default function HomePage() {
         <div className="space-y-6">
           <div className="relative w-full"> 
             <Image
-              src="/assets/images/headshot.webp"
+              src="/assets/images/headshot-1.JPG"
               alt="Dr. Sorensen headshot"
               width={500}
               height={500}
