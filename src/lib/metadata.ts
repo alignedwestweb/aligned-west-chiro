@@ -3,8 +3,8 @@ import { Metadata } from 'next';
 export const siteConfig = {
   name: 'AlignedWest Chiropractic',
   description: 'Holistic chiropractic care in Orem, Utah. Specializing in NAET therapy, soul alignment, and gentle adjustments to restore balance in body, mind, and spirit.',
-  url: 'https://www.alignedwestchiropractic.com',
-  ogImage: 'https://www.alignedwestchiropractic.com/og-image.jpg', // Make sure to host a branded image here
+  url: 'https://www.alignedwest.com',
+  ogImage: 'https://www.alignedwest.com/og-image.jpg', // Make sure to host a branded image here
   address: '574 S State St, Suite #232, Orem UT, 84058',
   phone: '801-658-9185',
 };
