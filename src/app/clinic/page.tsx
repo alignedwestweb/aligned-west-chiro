@@ -1,6 +1,6 @@
 import { Clock, MapPin, Phone, Info, Car } from 'lucide-react'; // Using lucide-react for subtle icons
 import Image from 'next/image';
-import AnnouncementBar from '@/components/AnnouncementBar';
+
 
 export default function ClinicInfoPage() {
   return (
