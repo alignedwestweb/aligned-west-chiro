@@ -37,4 +37,18 @@ const config = {
   plugins: [typography],
 };
 
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  theme: {
+    extend: {
+      // This allows you to use 'object-top-quarter' as a class
+      objectPosition: {
+        'top-quarter': 'center 12.5%',
+      }
+    },
+  },
+  plugins: [],
+}
+
 export default config;

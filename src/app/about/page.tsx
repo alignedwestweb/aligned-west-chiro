@@ -24,11 +24,11 @@ export default function AboutPage() {
           <div className="space-y-6">
             <div className="relative w-full">
               <Image
-                src="/assets/images/headshot.webp"
+                src="/assets/images/headshot-1.JPG"
                 alt="Dr. Sorensen headshot"
                 width={500}
                 height={500}
-                className="w-full h-auto object-cover rounded-sm shadow-sm border border-slate-200/50"
+                className="w-full h-148.5 object-cover object-[center_30%] rounded-sm shadow-sm border border-slate-200/50"
                 priority
               />
             </div>

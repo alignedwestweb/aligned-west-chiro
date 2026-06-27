@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
             
             <section>
               <p>
-                AlignedWest Chiropractic (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) values your privacy. This Privacy Policy outlines how we collect, use, and protect your personal information when you visit our website (www.alignedwestchiropractic.com) or provide information through our online forms.
+                AlignedWest Chiropractic (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) values your privacy. This Privacy Policy outlines how we collect, use, and protect your personal information when you visit our website (www.alignedwest.com) or provide information through our online forms.
               </p>
             </section>
   

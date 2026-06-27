@@ -1,10 +1,7 @@
-import Link from 'next/link'; // Fixed: Use next/link
 import Image from 'next/image';
+import BookNow from '@/components/Shared/BookNow';
 
 export default function NaetPage() {
-  // Turncloud URL
-  const bookingUrl = { href: process.env.NEXT_PUBLIC_BOOK_NOW_LINK || '#' };
-
   return (
     <article className="bg-clinic-off-white min-h-screen py-20 px-4">
       <div className="max-w-4xl mx-auto bg-white shadow-sm border border-slate-200/50 rounded-sm overflow-hidden">
@@ -24,6 +21,7 @@ export default function NaetPage() {
           <h1 className="text-4xl font-serif text-clinic-dark mb-6">NAET Treatments</h1>
           <div className="h-1 w-20 bg-clinic-gold mb-8"></div>
 
+          {/* CONTENT SECTION */}
           <section className="prose prose-slate max-w-none text-clinic-gray leading-relaxed space-y-6">
             <p className="text-lg text-clinic-dark font-medium">
               Address allergies and sensitivities with Nambudripad&apos;s Allergy Elimination Techniques (NAET).
@@ -39,18 +37,19 @@ export default function NaetPage() {
             <p>
               A 30-minute NAET session involves muscle testing (kinesiology) to identify sensitivities, followed by a specific sequence of acupressure along the spine. After the treatment, there is a short 20-minute period of quiet relaxation in the clinic to allow the body to integrate the new energy pattern.
             </p>
-
-            {/* Adjusted Booking Button */}
-            <div className="pt-8">
-              <Link 
-                href={process.env.NEXT_PUBLIC_BOOK_NOW_LINK || '#'}
-                target="_blank"
-                className="inline-block bg-clinic-navy text-white px-12 py-4 text-sm uppercase tracking-widest font-bold hover:bg-clinic-navy transition-all duration-300 shadow-md"
-              >
-                Book NAET Treatment
-              </Link>
-            </div>
           </section>
+
+          {/* CENTRALIZED BOOKING BUTTON 
+              We move this OUTSIDE the prose section to avoid layout conflicts.
+          */}
+          <div className="mt-12 flex justify-center w-full py-8">
+            <BookNow 
+              className="bg-clinic-yellow text-clinic-dark px-12 py-5 rounded-none uppercase tracking-widest text-sm font-bold hover:bg-clinic-gold transition-all shadow-md"
+            >
+              Book NAET Treatment
+            </BookNow>
+          </div>
+
         </div>
       </div>
     </article>

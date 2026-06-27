@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import BookNow from '@/components/Shared/BookNow';
 
 export default function ApprenticeMassagePage() {
   return (
@@ -32,12 +33,11 @@ export default function ApprenticeMassagePage() {
                 She enjoys working with a wide range of clients, from first-time massage recipients to those seeking ongoing care, and values being part of each client’s journey toward relaxation and healing.
                 Ireland’s approach is grounded in respect, attentiveness, and clear communication. She prioritizes creating a safe, supportive environment where clients feel heard and cared for throughout their session.
               </p>
-              <Link 
-                href={process.env.NEXT_PUBLIC_BOOK_NOW_LINK || '#'}
-                className="inline-block text-center bg-clinic-dark text-white py-4 px-8 text-xs uppercase tracking-widest font-bold hover:bg-white transition-colors w-full md:w-max hover:text-black"
-              >
-                Book with Ireland - Massage Apprentice
-              </Link>
+            <BookNow 
+              className="bg-clinic-dark text-white px-10 py-4 rounded-none uppercase tracking-widest text-sm hover:bg-opacity-90 transition inline-block"
+            >
+              Book with Ireland
+            </BookNow>
             </div>
             <div className="relative h-[350px] md:h-auto bg-slate-200">
               <Image 
@@ -55,7 +55,7 @@ export default function ApprenticeMassagePage() {
                 src="/assets/images/Lauren.JPEG" 
                 alt="Apprentice 2 Portrait"
                 fill
-                className="object-cover object-top"
+                className="object-cover scale-100 object-top"
               />
             </div>
             <div className="p-10 md:p-16 flex flex-col justify-center bg-clinic-dark text-white">
@@ -67,12 +67,11 @@ export default function ApprenticeMassagePage() {
                 Lauren approaches massage as both a therapeutic and restorative experience. She aims to help clients step out of the demands of daily life and leave each session feeling more balanced, at ease, and reconnected in both body and mind.
                 She is particularly skilled at locating areas of muscular tension and working them out with focused, intentional care.
               </p>
-              <Link 
-                href={process.env.NEXT_PUBLIC_BOOK_NOW_LINK || '#'}
-                className="inline-block text-center bg-clinic-yellow text-clinic-dark py-4 px-8 text-xs uppercase tracking-widest font-bold hover:bg-white transition-colors w-full md:w-max"
-              >
-                Book with Lauren - Massage Apprentice
-              </Link>
+            <BookNow 
+              className="bg-clinic-yellow text-clinic-dark px-10 py-4 rounded-none uppercase tracking-widest text-sm hover:bg-opacity-90 transition inline-block"
+            >
+              Book with Lauren
+            </BookNow>
             </div>
 
           </div>

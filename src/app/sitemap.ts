@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.alignedwestchiropractic.com';
+  const baseUrl = 'https://www.alignedwest.com';
 
   // 1. Get all MDX blog post slugs
   const contentDirectory = path.join(process.cwd(), 'src/content');

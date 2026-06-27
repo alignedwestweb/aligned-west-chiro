@@ -1,9 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import BookNow from '@/components/Shared/BookNow';
 
 export default function ChiropracticPage() {
-  // Turncloud URL
-  const bookingUrl = { href: process.env.NEXT_PUBLIC_BOOK_NOW_LINK || '#' };
 
   return (
     <article className="bg-clinic-off-white min-h-screen py-20 px-4">
@@ -86,14 +85,12 @@ export default function ChiropracticPage() {
               </p>
             </div>
 
-            <div className="text-center pt-10 border-t border-slate-100">
-              <Link 
-                href={process.env.NEXT_PUBLIC_BOOK_NOW_LINK || '#'}
-                target="_blank"
-                className="inline-block bg-clinic-navy text-white px-12 py-4 text-sm uppercase tracking-widest font-bold hover:bg-clinic-navy transition-all duration-300 shadow-md"
-              >
-                Book Your Adjustment
-              </Link>
+            <div className="text-center pt-10 py-8 border-t border-slate-100">
+            <BookNow 
+              className="bg-clinic-yellow text-clinic-dark px-10 py-4 rounded-none uppercase tracking-widest text-sm hover:bg-opacity-90 transition inline-block"
+            >
+              Book Now
+            </BookNow>
             </div>
           </section>
         </div>
