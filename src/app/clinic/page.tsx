@@ -1,5 +1,6 @@
 import { Clock, MapPin, Phone, Info, Car } from 'lucide-react'; // Using lucide-react for subtle icons
 import Image from 'next/image';
+import AnnouncementBar from '@/components/AnnouncementBar';
 
 export default function ClinicInfoPage() {
   return (
@@ -13,10 +14,30 @@ export default function ClinicInfoPage() {
           <p className="text-clinic-gray">Everything you need to know for your visit to AlignedWest.</p>
         </div>
 
+        <div className="text-center bg-clinic-yellow border-l-4 border-clinic-gold p-6 mb-20 my-8 rounded shadow-sm">
+          <h2 className="text-xl font-bold text-clinic-dark mb-4">Moving Notice</h2>
+          <p className="text-clinic-dark mb-4">
+            AlignedWest Chiropractic is moving to a new professional space in Provo. 
+            Beginning July 6, 2026, all appointments will be held at:
+          </p>
+          
+          <div className="font-bold text-clinic-dark mb-4">
+            <p>AlignedWest Chiropractic</p>
+            <p>3355 North University Ave., Suite 175</p>
+            <p>Provo, Utah 84604</p>
+          </div>
+          
+          <p className="text-clinic-dark italic">
+            Please use the new address for appointments scheduled on or after July 6, 2026. 
+          <p>  If you have any questions before your visit, feel free to reach out.</p>
+          <p>  Appointments before July 6, 2026 will continue at the current Troon Park location unless otherwise arranged.</p>
+          </p>
+        </div>
+
         {/* Image */}
         <div className="relative w-1/2 h-1/2 md:h-[300px] mb-16 align-middle mx-auto">
           <Image 
-            src="/assets/images/Troon-Park.jpeg" 
+            src="/assets/images/walker1.jpeg" 
             alt="AlignedWest Chiropractic Clinic Front" 
             fill 
             className="object-cover object-center rounded-sm shadow-sm border border-slate-200/50"
@@ -41,9 +62,9 @@ export default function ClinicInfoPage() {
           <div className="bg-white p-8 shadow-sm border border-slate-200/50 flex flex-col items-center text-center">
             <MapPin className="text-clinic-gold mb-4" size={32} />
             <h3 className="text-xl font-serif text-clinic-dark mb-4">Location</h3>
-            <p className="text-clinic-gray text-sm">Troon Park Building</p>
-            <p className="text-clinic-dark font-medium">574 S State Street, Suite 232</p>
-            <p className="text-clinic-dark font-medium">Orem, UT 84058</p>
+            <p className="text-clinic-gray text-sm">Jamestown Square</p>
+            <p className="text-clinic-dark font-medium">3355 North University Ave., Suite 175</p>
+            <p className="text-clinic-dark font-medium">Provo, Utah 84604</p>
           </div>
 
           {/* Contact Card */}
@@ -92,13 +113,12 @@ export default function ClinicInfoPage() {
             </div>
             <div className="space-y-4 text-clinic-gray text-sm leading-relaxed">
               <p className="font-medium text-clinic-dark">Free parking available</p>
-              <p>Park on the northeast side of Troon Park Building</p>
               <p>Accessible parking spaces available near both entrances</p>
               
               {/* Map Placeholder */}
             <div className="mt-6 w-full h-48 bg-slate-100 border border-slate-200 overflow-hidden shadow-sm rounded-sm">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.610111100506!2d-111.7018314!3d40.4174786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d830026e959d3%3A0xe5452d37c9569727!2s574%20S%20State%20St%20%23232%2C%20Orem%2C%20UT%2084058!5e0!3m2!1sen!2sus!4v1741000000000!5m2!1sen!2sus" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6087.667780534875!2d-111.65855537354128!3d40.27944000551334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d907c09430413%3A0xb691ffa7ddee5518!2s3355%20N%20University%20Ave%20%23175%2C%20Provo%2C%20UT%2084604!5e0!3m2!1sen!2sus!4v1782562258790!5m2!1sen!2sus"
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 

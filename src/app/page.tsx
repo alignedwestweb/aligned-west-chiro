@@ -12,7 +12,7 @@ export default function HomePage() {
             Experience Healing, <br className="hidden md:block" /> Reimagined
           </h1>
           <p className="max-w-2xl text-lg md:text-xl text-slate-300 font-light mb-10">
-            Personalized chiropractic care blending mind, body, and soul for holistic wellness in Orem, Utah.
+            Personalized chiropractic care blending mind, body, and soul for whole-person wellness in Utah County.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link 
@@ -26,6 +26,32 @@ export default function HomePage() {
               className="border border-white/30 text-white px-10 py-4 rounded-none uppercase tracking-widest text-sm hover:bg-white hover:text-clinic-navy transition"
             >
               Our Story
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Hero Announcement Card */}
+      <section className="bg-clinic-yellow py-12 px-6">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-clinic-dark mb-4">
+            We're Moving to Provo
+          </h2>
+          <p className="text-lg text-black mb-6 leading-relaxed">
+            AlignedWest Chiropractic is entering a new chapter. Beginning July 6, 2026, 
+            appointments will take place at our new location inside Jamestown Square in Provo.
+          </p>
+          
+          <div className="text-left bg-clinic-navy p-6 rounded-lg shadow-sm border border-clinic-gold/20 inline-block mb-8">
+            <p className="font-bold text-white">Our new address will be:</p>
+            <p className="text-white">AlignedWest Chiropractic</p>
+            <p className="text-white">3355 North University Ave., Suite 175</p>
+            <p className="text-white">Provo, Utah 84604</p>
+          </div>
+
+          <div className="block">
+            <Link href="/clinic" className="bg-clinic-navy text-white px-8 py-3 rounded hover:bg-clinic-dark transition font-medium">
+              See New Location Details
             </Link>
           </div>
         </div>
