@@ -35,15 +35,15 @@ export default function HomePage() {
       <section className="bg-clinic-yellow py-12 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-clinic-dark mb-4">
-            We're Moving to Provo
+            We Moved to Provo
           </h2>
           <p className="text-lg text-black mb-6 leading-relaxed">
-            AlignedWest Chiropractic is entering a new chapter. Beginning July 6, 2026, 
+            AlignedWest Chiropractic is entering a new chapter. As of July 6, 2026, 
             appointments will take place at our new location inside Jamestown Square in Provo.
           </p>
           
           <div className="text-left bg-clinic-navy p-6 rounded-lg shadow-sm border border-clinic-gold/20 inline-block mb-8">
-            <p className="font-bold text-white">Our new address will be:</p>
+            <p className="font-bold text-white">Our new address is:</p>
             <p className="text-white">AlignedWest Chiropractic</p>
             <p className="text-white">3355 North University Ave., Suite 175</p>
             <p className="text-white">Provo, Utah 84604</p>

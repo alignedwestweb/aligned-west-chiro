@@ -15,10 +15,10 @@ export default function ClinicInfoPage() {
         </div>
 
         <div className="text-center bg-clinic-yellow border-l-4 border-clinic-gold p-6 mb-20 my-8 rounded shadow-sm">
-          <h2 className="text-xl font-bold text-clinic-dark mb-4">Moving Notice</h2>
+          <h2 className="text-xl font-bold text-clinic-dark mb-4">Move Notice</h2>
           <p className="text-clinic-dark mb-4">
-            AlignedWest Chiropractic is moving to a new professional space in Provo. 
-            Beginning July 6, 2026, all appointments will be held at:
+            AlignedWest Chiropractic has moved to a new professional space in Provo. 
+            As of July 6, 2026, all appointments will be held at:
           </p>
           
           <div className="font-bold text-clinic-dark mb-4">
@@ -30,7 +30,6 @@ export default function ClinicInfoPage() {
           <p className="text-clinic-dark italic">
             Please use the new address for appointments scheduled on or after July 6, 2026. 
           <p>  If you have any questions before your visit, feel free to reach out.</p>
-          <p>  Appointments before July 6, 2026 will continue at the current Troon Park location unless otherwise arranged.</p>
           </p>
         </div>
 

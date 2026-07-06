@@ -30,7 +30,7 @@ export default function Navigation() {
     <nav className="bg-clinic-navy sticky top-0 z-50">
       {/* ANNOUNCEMENT BAR */}
       <div className="bg-clinic-yellow text-clinic-dark text-center py-2 px-4 text-xs md:text-sm font-medium">
-        AlignedWest Chiropractic is moving! Beginning July 6, 2026, appointments will be held at our new Provo location. 
+        AlignedWest Chiropractic has moved! As of July 6, 2026, appointments will be held at our new Provo location. 
         <Link href="/clinic" className="underline font-bold ml-2 hover:text-white transition">
           View New Location
         </Link>
