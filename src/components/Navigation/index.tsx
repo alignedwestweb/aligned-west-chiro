@@ -39,14 +39,14 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
         
         {/* LOGO */}
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex h-[50px] w-[180px] items-center">
           <Image 
             src="/assets/logo-contrast.svg"
             alt="AlignedWest Chiropractic Logo"
             width={180}
             height={50} 
             priority
-            className="object-contain"
+            className="h-[50px] w-[180px] object-contain"
           />
         </Link>
 

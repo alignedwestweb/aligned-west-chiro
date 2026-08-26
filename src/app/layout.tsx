@@ -29,6 +29,15 @@ export default function RootLayout({
   return (
     // 3. Apply font variables and set base text smoothing
     <html lang="en" className={`${inter.variable} ${playfair.variable} scroll-smooth`}>
+      <head>
+        <link
+          rel="preload"
+          href="/assets/fonts/geller-headline.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className="antialiased text-clinic-dark bg-white min-h-screen flex flex-col font-sans">
         
         {/* Navigation - Stays at the top */}
