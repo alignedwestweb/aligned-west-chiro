@@ -1,12 +1,14 @@
 import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.alignedwest.com';
+
   return {
     rules: {
       userAgent: '*',
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://www.alignedwest.com/sitemap.xml',
+    sitemap: `${siteUrl}/sitemap.xml`,
   };
 }
