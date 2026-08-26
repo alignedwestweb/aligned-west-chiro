@@ -1,6 +1,15 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import BookNow from '@/components/Shared/BookNow';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Provo Chiropractor | AlignedWest Chiropractic',
+  description: 'Personalized chiropractic care in Provo, Utah, with NAET, apprentice massage, and whole-person wellness services at AlignedWest Chiropractic.',
+  alternates: {
+    canonical: 'https://www.alignedwest.com/',
+  },
+};
 
 export default function HomePage() {
   return (
@@ -67,7 +76,7 @@ export default function HomePage() {
 
         <div className="text-center mb-12">
         <h3 className="text-2xl md:text-3xl font-serif mb-3 text-clinic-dark">
-          Meet Dr. Weston Sorensen
+          Meet Dr. Weston Sorenson
         </h3>
         <p className="text-clinic-gray text-base md:text-lg max-w-3xl mx-auto">
           Guiding you toward balance and renewal through compassionate, integrative chiropractic care.
@@ -82,7 +91,7 @@ export default function HomePage() {
           <div className="relative w-full"> 
             <Image
               src="/assets/images/headshot-1.JPG"
-              alt="Dr. Sorensen headshot"
+              alt="Dr. Sorenson headshot"
               width={500}
               height={500}
               className="w-full h-171.5 object-cover rounded-sm shadow-sm border border-slate-200/50"
@@ -116,7 +125,7 @@ export default function HomePage() {
           {/* Credentials section */}
           <div className="rounded-lg border border-slate-300/40 flex flex-col bg-white p-8 shadow-sm">
             <h4 className="text-xl font-serif text-clinic-dark mb-4">
-              Credentials and Continung Journey
+              Credentials and Continuing Journey
             </h4>
             
             {/* The list container is now a 2-column grid */}

@@ -1,6 +1,15 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Users, BookOpen, Award, CheckCircle } from 'lucide-react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Massage Therapy Apprenticeship in Provo, UT | AlignedWest',
+  description: 'Explore AlignedWest’s massage therapy apprenticeship in Provo, Utah, including curriculum, hands-on training, tuition, program expectations, and how to apply.',
+  alternates: {
+    canonical: 'https://www.alignedwest.com/apprenticeship',
+  },
+};
 
 export default function ApprenticeshipPage() {
   return (

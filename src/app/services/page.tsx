@@ -1,5 +1,14 @@
 import Link from 'next/link';
 import BookNow from '@/components/Shared/BookNow';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Chiropractic, NAET & Massage in Provo | AlignedWest',
+  description: 'Explore chiropractic adjustments, NAET, apprentice massage, and Soul Alignment services at AlignedWest Chiropractic in Provo, Utah.',
+  alternates: {
+    canonical: 'https://www.alignedwest.com/services',
+  },
+};
 
 const SERVICES = [
   {

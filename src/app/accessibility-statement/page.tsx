@@ -1,3 +1,13 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Accessibility Statement | AlignedWest Chiropractic',
+  description: 'Learn about AlignedWest Chiropractic’s commitment to making our website accessible to all visitors.',
+  alternates: {
+    canonical: 'https://www.alignedwest.com/accessibility-statement',
+  },
+};
+
 export default function AccessibilityStatement() {
     const clinicEmail = "connect@alignedwest.com";
     const clinicPhone = "801-658-9185";

@@ -1,6 +1,15 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import BookNow from '@/components/Shared/BookNow';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Apprentice Massage in Provo, UT | AlignedWest',
+  description: 'Book supervised apprentice massage in Provo at AlignedWest Chiropractic, with sessions focused on relaxation, muscular tension, comfort, and individualized care.',
+  alternates: {
+    canonical: 'https://www.alignedwest.com/apprentice-massage',
+  },
+};
 
 export default function ApprenticeMassagePage() {
   return (

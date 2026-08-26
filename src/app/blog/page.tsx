@@ -2,12 +2,18 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import Link from 'next/link';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Chiropractic & Wellness Blog | AlignedWest Chiropractic',
+  description: 'Read articles from AlignedWest Chiropractic about chiropractic care, NAET, stress, and whole-person wellness from our Provo, Utah practice.',
+  alternates: {
+    canonical: 'https://www.alignedwest.com/blog',
+  },
+};
 
 export default function BlogPage() {
-  // Define the path to your content
   const contentDirectory = path.join(process.cwd(), 'src/content');
-  
-  // Get all .mdx files
   const files = fs.readdirSync(contentDirectory);
 
   const posts = files.map((filename) => {
@@ -36,18 +42,10 @@ export default function BlogPage() {
           {posts.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`}>
               <div className="bg-white p-8 border border-slate-200/60 shadow-sm hover:shadow-md transition-all group">
-                <span className="text-clinic-gold text-xs uppercase tracking-widest font-bold mb-2 block">
-                  {post.date}
-                </span>
-                <h2 className="text-2xl font-serif text-clinic-dark group-hover:text-clinic-gold transition-colors mb-3">
-                  {post.title}
-                </h2>
-                <p className="text-clinic-gray text-sm leading-relaxed max-w-2xl">
-                  {post.excerpt}
-                </p>
-                <div className="mt-4 text-clinic-dark text-xs uppercase tracking-widest font-bold border-b border-clinic-gold w-fit">
-                  Read Article
-                </div>
+                <span className="text-clinic-gold text-xs uppercase tracking-widest font-bold mb-2 block">{post.date}</span>
+                <h2 className="text-2xl font-serif text-clinic-dark group-hover:text-clinic-gold transition-colors mb-3">{post.title}</h2>
+                <p className="text-clinic-gray text-sm leading-relaxed max-w-2xl">{post.excerpt}</p>
+                <div className="mt-4 text-clinic-dark text-xs uppercase tracking-widest font-bold border-b border-clinic-gold w-fit">Read Article</div>
               </div>
             </Link>
           ))}

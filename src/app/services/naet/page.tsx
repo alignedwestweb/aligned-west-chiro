@@ -1,5 +1,14 @@
 import Image from 'next/image';
 import BookNow from '@/components/Shared/BookNow';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'NAET in Provo, UT | AlignedWest Chiropractic',
+  description: 'Learn about NAET at AlignedWest Chiropractic in Provo, including how sessions are structured, what to expect, and how to book an appointment.',
+  alternates: {
+    canonical: 'https://www.alignedwest.com/naet',
+  },
+};
 
 export default function NaetPage() {
   return (

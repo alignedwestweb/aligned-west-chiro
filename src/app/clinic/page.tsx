@@ -1,6 +1,14 @@
 import { Clock, MapPin, Phone, Info, Car } from 'lucide-react'; // Using lucide-react for subtle icons
 import Image from 'next/image';
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'Provo Chiropractic Clinic & Hours | AlignedWest',
+  description: 'Visit AlignedWest Chiropractic at Jamestown Square in Provo, Utah. Find our address, hours, parking information, and what to expect before your visit.',
+  alternates: {
+    canonical: 'https://www.alignedwest.com/clinic',
+  },
+};
 
 export default function ClinicInfoPage() {
   return (

@@ -14,14 +14,18 @@ async function getPostData(slug: string) {
   return matter(fileContent);
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const post = await getPostData(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const post = await getPostData(slug);
   
   if (!post) return { title: 'Article Not Found' };
 
   return {
     title: post.data.title,
     description: post.data.excerpt,
+    alternates: {
+      canonical: `https://www.alignedwest.com/blog/${slug}`,
+    },
     openGraph: {
       title: post.data.title,
       description: post.data.excerpt,

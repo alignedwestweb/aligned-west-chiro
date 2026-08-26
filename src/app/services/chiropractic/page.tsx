@@ -1,6 +1,15 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import BookNow from '@/components/Shared/BookNow';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Chiropractor in Provo, UT | AlignedWest Chiropractic',
+  description: 'Gentle, individualized chiropractic care in Provo focused on comfort, movement, and function. Learn what to expect at AlignedWest Chiropractic.',
+  alternates: {
+    canonical: 'https://www.alignedwest.com/chiropractic',
+  },
+};
 
 export default function ChiropracticPage() {
 

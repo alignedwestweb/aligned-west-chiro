@@ -1,6 +1,15 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import BookNow from '@/components/Shared/BookNow';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Soul Alignment Sessions in Provo, UT | AlignedWest',
+  description: 'Explore personalized Soul Alignment sessions in Provo combining gentle chiropractic care, breathwork, muscle testing, and energy-based practices.',
+  alternates: {
+    canonical: 'https://www.alignedwest.com/soul-alignment',
+  },
+};
 
 export default function SoulAlignmentPage() {
 

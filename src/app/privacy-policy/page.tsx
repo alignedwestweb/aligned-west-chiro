@@ -1,3 +1,13 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy | AlignedWest Chiropractic',
+  description: 'Review the privacy policy and data practices for AlignedWest Chiropractic in Provo, Utah.',
+  alternates: {
+    canonical: 'https://www.alignedwest.com/privacy-policy',
+  },
+};
+
 export default function PrivacyPolicy() {
     const effectiveDate = "March 27, 2025";
     const clinicEmail = "connect@alignedwest.com";

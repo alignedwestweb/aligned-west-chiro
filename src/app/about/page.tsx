@@ -1,4 +1,13 @@
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Dr. Weston Sorenson | Provo Chiropractor',
+  description: 'Meet Dr. Weston Sorenson and learn about his approach to gentle, individualized chiropractic and whole-person wellness care in Provo, Utah.',
+  alternates: {
+    canonical: 'https://www.alignedwest.com/about',
+  },
+};
 
 export default function AboutPage() {
   return (
@@ -25,7 +34,7 @@ export default function AboutPage() {
             <div className="relative w-full">
               <Image
                 src="/assets/images/headshot-1.JPG"
-                alt="Dr. Sorensen headshot"
+                alt="Dr. Sorenson headshot"
                 width={500}
                 height={500}
                 className="w-full h-148.5 object-cover object-[center_30%] rounded-sm shadow-sm border border-slate-200/50"
