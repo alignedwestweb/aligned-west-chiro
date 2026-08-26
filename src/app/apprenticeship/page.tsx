@@ -3,9 +3,6 @@ import Link from 'next/link';
 import { Users, BookOpen, Award, CheckCircle } from 'lucide-react';
 
 export default function ApprenticeshipPage() {
-  // Application deadline logic
-  const applicationDeadline = "May 15, 2026";
-
   return (
     <main className="bg-clinic-off-white min-h-screen">
       {/* 1. Hero Banner Section */}
@@ -17,15 +14,6 @@ export default function ApprenticeshipPage() {
             Massage Therapy Apprenticeship
           </h1>
           <div className="h-1 w-20 bg-clinic-gold mx-auto mb-10"></div>
-          
-          <div className="inline-block bg-white border border-clinic-gold/30 px-8 py-4 rounded-sm shadow-sm mb-8">
-            <p className="text-clinic-gray text-xs uppercase tracking-[0.2em] font-bold mb-1">
-              Next Application Deadline
-            </p>
-            <p className="text-2xl font-serif text-clinic-dark">
-              {applicationDeadline}
-            </p>
-          </div>
 
           <div className="relative w-5/8 h-[60vh] md:h-[60vh] align-middle mx-auto mb-12 rounded-sm overflow-hidden">
             <Image
@@ -249,7 +237,6 @@ export default function ApprenticeshipPage() {
               </p>
               <div className="mt-auto">
                 <p className="text-2xl font-serif text-clinic-gold">$250</p>
-                <p className="text-[10px] uppercase tracking-tighter opacity-70 mt-1">Due before May 15th, 2026</p>
               </div>
             </div>
           </div>
@@ -342,7 +329,7 @@ export default function ApprenticeshipPage() {
           <div className="bg-clinic-navy text-white p-12 rounded-sm shadow-lg">
             <h3 className="text-2xl font-serif mb-4">Ready to Start Your Journey?</h3>
             <p className="opacity-90 mb-8 max-w-xl mx-auto">
-              Join our next cohort and begin your career as a certified massage therapist. Application deadline is {applicationDeadline}.
+              Join our next cohort and begin your career as a certified massage therapist.
             </p>
             <Link 
               href="https://form.jotform.com/253270906369059"

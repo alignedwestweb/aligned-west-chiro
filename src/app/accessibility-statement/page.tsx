@@ -1,7 +1,7 @@
 export default function AccessibilityStatement() {
     const clinicEmail = "connect@alignedwest.com";
     const clinicPhone = "801-658-9185";
-    const clinicAddress = "574 S State St, Suite #232, Orem UT, 84058";
+    const clinicAddress = "3355 North University Ave., Suite 175, Provo UT, 84604";
   
     return (
       <article className="bg-clinic-off-white min-h-screen py-24 px-4">

@@ -185,7 +185,7 @@ export default function HomePage() {
             <div className="bg-white p-10 shadow-sm border border-slate-200/50 flex flex-col items-center text-center group">
               <h3 className="text-xl font-serif mb-4 text-clinic-dark">Visit the Clinic</h3>
               <p className="text-clinic-gray text-sm leading-relaxed mb-6">
-                Located in the heart of Orem. View our hours, location, and what to expect.
+                Located in the heart of Provo. View our hours, location, and what to expect.
               </p>
               <Link href="/clinic" className="text-clinic-gold uppercase tracking-widest text-xs font-bold group-hover:underline">
                 Find Us

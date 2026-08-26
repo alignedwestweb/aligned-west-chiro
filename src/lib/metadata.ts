@@ -2,10 +2,10 @@ import { Metadata } from 'next';
 
 export const siteConfig = {
   name: 'AlignedWest Chiropractic',
-  description: 'Holistic chiropractic care in Orem, Utah. Specializing in NAET therapy, soul alignment, and gentle adjustments to restore balance in body, mind, and spirit.',
+  description: 'Holistic chiropractic care in Provo, Utah. Specializing in NAET therapy, soul alignment, and gentle adjustments to restore balance in body, mind, and spirit.',
   url: 'https://www.alignedwest.com',
   ogImage: 'https://www.alignedwest.com/og-image.jpg', // Make sure to host a branded image here
-  address: '574 S State St, Suite #232, Orem UT, 84058',
+  address: '3355 North University Ave., Suite 175, Provo, UT 84604',
   phone: '801-658-9185',
 };
 
@@ -16,21 +16,21 @@ export const defaultMetadata: Metadata = {
   },
   description: siteConfig.description,
   keywords: [
-    'Chiropractor Orem',
-    'Chiropractor Orem Utah',
-    'Chiropractic Care Orem',
-    'Holistic Chiropractor Orem',
-    'NAET Orem',
+    'Chiropractor Provo',
+    'Chiropractor Provo Utah',
+    'Chiropractic Care Provo',
+    'Holistic Chiropractor Provo',
+    'NAET Provo',
     'NAET Utah County',
-    'Allergy Treatment Orem',
-    'Natural Allergy Relief Orem',
+    'Allergy Treatment Provo',
+    'Natural Allergy Relief Provo',
     'Chiropractor Near Me',
-    'Back Pain Chiropractor Orem',
-    'Headache Chiropractor Orem',
-    'Natural Pain Relief Orem',
-    'Family Chiropractor Orem',
-    'Wellness Chiropractor Orem',
-    'Sports Chiropractor Orem',
+    'Back Pain Chiropractor Provo',
+    'Headache Chiropractor Provo',
+    'Natural Pain Relief Provo',
+    'Family Chiropractor Provo',
+    'Wellness Chiropractor Provo',
+    'Sports Chiropractor Provo',
     'AlignedWest Chiropractic',
     'Weston Sorenson'
   ],
