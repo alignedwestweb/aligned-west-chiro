@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function PrivacyPolicy() {
     const effectiveDate = "September 3, 2026";
     const clinicEmail = "admin@alignedwest.com";
-    const clinicPhone = "385-293-9393";
+    const clinicPhone = "(801)658-9185";
     const clinicName = "AlignedWest Chiropractic, LLC";
   
     return (
