@@ -65,7 +65,7 @@ export default function ClinicInfoPage() {
             <p className="text-clinic-dark font-medium">Tuesday 10:00 AM – 6:00 PM</p>
             <p className="text-clinic-dark font-medium">Wednesday 1:00 PM – 7:00 PM</p>
             <p className="text-clinic-dark font-medium">Thursday 10:00 AM – 6:00 PM</p>
-            <p className="text-clinic-dark font-medium">Friday 4:00 AM – 8:00 PM</p>
+            <p className="text-clinic-dark font-medium">Friday 4:00 PM – 8:00 PM</p>
             <p className="text-clinic-gray text-sm mt-2">Closed on weekends. Massage apprenticeship classroom instruction takes place Fridays from 9:00 AM to 4:00 PM. </p>
           </div>
 
