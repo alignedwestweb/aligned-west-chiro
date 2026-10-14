@@ -259,62 +259,10 @@ export default function ApprenticeshipPage() {
             </h2>
             <div className="h-1 w-16 bg-clinic-gold mx-auto mb-6"></div>
             <p className="text-clinic-gray leading-relaxed">
-              During the apprenticeship, you&apos;ll have the opportunity to earn income through supervised student massage sessions.
+              During the apprenticeship, you&apos;ll have the opportunity to earn income through supervised student massage sessions. Students earn $15/hr. Actual monthly incomes varies based on hours worked.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Card 1: Student Massage Sessions */}
-            <div className="bg-white p-8 border border-slate-200/60 shadow-sm rounded-sm flex flex-col">
-              <h3 className="text-xl font-serif text-clinic-dark mb-4">Student Sessions</h3>
-              <div className="space-y-3 flex-grow">
-                <div className="flex justify-between text-sm border-b border-slate-100 pb-2">
-                  <span className="text-clinic-gray">Hours per week</span>
-                  <span className="font-bold text-clinic-dark">20 hrs</span>
-                </div>
-                <div className="flex justify-between text-sm border-b border-slate-100 pb-2">
-                  <span className="text-clinic-gray">Rate</span>
-                  <span className="font-bold text-clinic-dark">$18 / hr</span>
-                </div>
-              </div>
-              <div className="mt-8">
-                <p className="text-2xl font-serif text-clinic-dark">$1,200<span className="text-xs uppercase tracking-widest text-clinic-gray ml-1">/mo</span></p>
-              </div>
-            </div>
-
-            {/* Card 2: Tips (Estimated) */}
-            <div className="bg-white p-8 border border-slate-200/60 shadow-sm rounded-sm flex flex-col">
-              <h3 className="text-xl font-serif text-clinic-dark mb-4">Tips (Estimated)</h3>
-              <div className="space-y-3 flex-grow">
-                <p className="text-sm text-clinic-gray leading-relaxed">
-                  Based on an average of <span className="text-clinic-dark font-semibold">$10–$15</span> per massage in tips from clients.
-                </p>
-              </div>
-              <div className="mt-8">
-                <p className="text-2xl font-serif text-clinic-dark">$800<span className="text-xs uppercase tracking-widest text-clinic-gray ml-1">/mo</span></p>
-              </div>
-            </div>
-
-            {/* Card 3: Total Earning Potential */}
-            <div className="bg-white p-8 border-2 border-clinic-gold shadow-md rounded-sm flex flex-col relative overflow-hidden">
-              {/* Subtle "Total" Tag */}
-              <div className="absolute top-0 right-0 bg-clinic-gold text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest">
-                Potential
-              </div>
-              
-              <h3 className="text-xl font-serif text-clinic-dark mb-4">Total Earning Potential*</h3>
-              <p className="text-sm text-clinic-gray mb-6">
-                Student sessions + tips
-              </p>
-              
-              <div className="mt-auto">
-                <p className="text-3xl font-serif text-clinic-gold">$2,000<span className="text-xs uppercase tracking-widest text-clinic-gray ml-1">/mo</span></p>
-                <p className="text-[10px] text-clinic-gray leading-tight mt-4 italic">
-                  *Figures are estimates and not a guarantee of income. Actual earnings depend on scheduled hours and client tips.
-                </p>
-              </div>
-            </div>
-          </div>
         </section>
 
         {/* 9. Final CTA Section */}

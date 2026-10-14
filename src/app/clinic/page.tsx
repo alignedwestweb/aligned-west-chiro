@@ -25,7 +25,7 @@ export default function ClinicInfoPage() {
           <p className="text-clinic-gray">Everything you need to know for your visit to AlignedWest.</p>
         </header>
 
-        <section className="text-center bg-clinic-yellow border-l-4 border-clinic-gold p-6 mb-20 my-8 rounded shadow-sm" aria-labelledby="move-notice-heading">
+        {/*<section className="text-center bg-clinic-yellow border-l-4 border-clinic-gold p-6 mb-20 my-8 rounded shadow-sm" aria-labelledby="move-notice-heading">
           <h2 id="move-notice-heading" className="text-xl font-bold text-clinic-dark mb-4">Move Notice</h2>
           <p className="text-clinic-dark mb-4">
             AlignedWest Chiropractic has moved to a new professional space in Provo. 
@@ -42,7 +42,7 @@ export default function ClinicInfoPage() {
             Please use the new address for appointments scheduled on or after July 6, 2026. 
           </p>
           <p className="text-clinic-dark italic">If you have any questions before your visit, feel free to reach out.</p>
-        </section>
+        </section> */}
 
         {/* Image */}
         <div className="relative aspect-[5/3] w-full max-w-2xl mb-16 mx-auto">
@@ -62,11 +62,11 @@ export default function ClinicInfoPage() {
             <Clock className="text-clinic-gold mb-4" size={32} aria-hidden="true" />
             <h2 className="text-xl font-serif text-clinic-dark mb-4">Hours of Operation</h2>
             <p className="text-clinic-dark font-medium">Monday 10:00 AM – 7:00 PM</p>
-            <p className="text-clinic-dark font-medium">Tuesday 10:00 AM – 5:00 PM</p>
+            <p className="text-clinic-dark font-medium">Tuesday 10:00 AM – 6:00 PM</p>
             <p className="text-clinic-dark font-medium">Wednesday 1:00 PM – 7:00 PM</p>
-            <p className="text-clinic-dark font-medium">Thursday 11:00 AM – 6:00 PM</p>
-            <p className="text-clinic-dark font-medium">Friday 8:00 AM – 4:00 PM</p>
-            <p className="text-clinic-gray text-sm mt-2">Closed on weekends</p>
+            <p className="text-clinic-dark font-medium">Thursday 10:00 AM – 6:00 PM</p>
+            <p className="text-clinic-dark font-medium">Friday 4:00 AM – 8:00 PM</p>
+            <p className="text-clinic-gray text-sm mt-2">Closed on weekends. Massage apprenticeship classroom instruction takes place Fridays from 9:00 AM to 4:00 PM. </p>
           </div>
 
           {/* Address Card */}

@@ -19,7 +19,7 @@ const config = {
       colors: {
         'clinic-navy': '#1B2B3A',
         'clinic-off-white': '#F4F1EA',
-        'clinic-gold': '#C5A059',
+        'clinic-gold': '#C2A16A',
         'clinic-dark': '#1A1A1A',
         'clinic-gray': '#717171',
         'clinic-beige': '#F9F7F2',
