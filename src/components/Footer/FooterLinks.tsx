@@ -15,6 +15,7 @@ const LINKS = [
     items: [
       { name: 'Privacy Policy', href: '/privacy-policy' },
       { name: 'Accessibility', href: '/accessibility-statement' },
+      { name: 'HIPAA Notice of Privacy', href: '/hipaa' },
     ]
   }
 ];

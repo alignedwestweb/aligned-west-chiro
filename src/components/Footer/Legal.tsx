@@ -17,6 +17,11 @@ export default function Legal() {
             Accessibility
           </Link>
         </li>
+        <li>
+          <Link href="/hipaa" className="hover:text-white transition-colors">
+            HIPAA Notice of Privacy
+          </Link>
+        </li>
       </ul>
     </div>
   );

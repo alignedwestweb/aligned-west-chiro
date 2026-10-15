@@ -30,6 +30,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-gray-300">
               <li><Link href="/privacy-policy" className="hover:text-white">Privacy Policy</Link></li>
               <li><Link href="/accessibility-statement" className="hover:text-white">Accessibility</Link></li>
+              <li><Link href="/hipaa" className="hover:text-white">HIPAA Notice of Privacy</Link></li>
             </ul>
           </div>
 
